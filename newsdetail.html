@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>影片详情</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <link type="text/css" rel="styleSheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="./js/bootstrap-paginator.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+  <style>
+    .det {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 100px;
+
+    }
+
+    #main {
+      display: flex;
+      flex-direction: column;
+      padding-top: 150px;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="body">
+
+    <!--导航栏-->
+
+    <div class="head">
+      <div class="middle">
+        <nav class="navbar" id="begin">
+          <div>
+            <i class="fa fa-wikipedia-w"style="font-size:60px;color：black；"></i>
+            <!-- <a class="navbar-brand" href="index.html"><img src="image/11.png" width="70px" height="70px"></a> -->
+          </div>
+          <div class="collaps">
+            <form class="form-inline my-3 my-lg-0">
+              <a class="nav-link" href="index.html">首页 <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="news.html">新闻动态</a>
+              <a class="nav-link" href="about.html">关于我们</a>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 详情 -->
+    <div class="det">
+      <div id="main">
+        <div>
+          <div><img style="width: 500px;height: 500px;" v-bind:src="rows.resimg" /></div>
+        </div>
+        <div>
+          <div>ID:{{rows.id}}</div>
+          <div>资源名称:{{rows.resname}}</div>
+          <div>更新时间:{{rows.resint}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div id="wft">
+    <div class="container" id="ft">
+      <div class="row" id="we">
+        <div>
+          <i class="fa fa-car" style="font-size:100px;color:black;"></i>
+          <h5>福州市仓山区</h5>
+        </div><!-- /.col-lg-4 -->
+        <div>
+          <i class="fa fa-podcast" style="font-size:100px;color:black;"></i>
+          <h5>123@o.com</h5>
+        </div><!-- /.col-lg-4 -->
+        <div>
+          <i class="fa fa-superpowers" style="font-size:100px;color:black;"></i>
+          <h5>400-800-88</h5>
+        </div><!-- /.col-lg-4 -->
+        <div>
+
+          <img class="img-circle" src="image/ewm.jpg" alt="Generic placeholder image" width="200" height="200">
+          <h5>扫一扫加入霍格沃兹</h5>
+        </div>
+      </div><!-- /.row -->
+      <hr class="featurette-divider">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+  </div>
+
+  </div>
+
+
+
+</body>
+
+<script>
+
+
+
+  var url = location.search,
+    obj = {};
+
+  if (url.indexOf("?") != -1) {
+    var str = url.substr(1);
+    strs = str.split("&");
+    for (var i = 0; i < strs.length; i++) {
+      obj[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+    }
+
+  }
+  console.log('传过来的参数是:', obj.id);
+
+
+
+
+
+  new Vue({
+    el: '#main',
+    data: {
+      rows: [],
+      newid: obj.id,
+    },
+
+    created() {
+      this.getData()
+    },
+    methods: {
+      getData() {
+        var _ = this;
+        var urlApi = 'http://mock-api.com/NnQ6NdKY.mock/news';
+        // var url = urlApi + obj.id;
+        $.getJSON(urlApi, function (result, status) {
+          // _.rows = result;
+          _.rows = result[_.newid - 1]
+          console.log(_.rows)
+        })
+      },
+
+    },
+  })
+</script>
+
+
+
+</html>

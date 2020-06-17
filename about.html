@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <head>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+        <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+        <title>关于我们</title>
+        <!--引用百度地图API-->
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nSxiPohfziUaCuONe4ViUP2N"></script>
+      </head>
+
+
+    <title>Title</title>
+    <link type="text/css" rel="styleSheet"  href="css/style.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <div class="body">
+
+      <!--导航栏-->
+  
+      <div class="head">
+        <div class="middle">
+          <nav class="navbar" id="begin">
+            <div>
+              <i class="fa fa-wikipedia-w"style="font-size:60px;color：black；"></i>
+              <!-- <a class="navbar-brand" href="index.html"><img src="image/11.png" width="70px" height="70px"></a> -->
+            </div>
+            <div class="collaps">
+              <form class="form-inline my-3 my-lg-0">
+                <a class="nav-link" href="index.html">首页 <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="news.html">新闻动态</a>
+                <a class="nav-link" href="about.html">关于我们</a>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+
+
+
+<div class="container" id="tu">
+    <div class="row" id="tu"style="padding-bottom:100px;">
+        <div class="col-lg-6">
+          <!--百度地图容器-->
+                <div style="width:auto;height:300px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+        </div>
+
+        <div class="col-lg-6">
+     <p> <h6>Harry Potter）是英国作家J·K·罗琳（J. K. Rowling）于1997～2007年所著的魔幻文学系列小说，共7部。其中
+         前六部以霍格沃茨魔法学校（Hogwarts School of Witchcraft and Wizardry）为主要舞台，描写的是主人公——
+         年轻的巫师学生哈利·波特在霍格沃茨前后六年的学习生活和冒险故事</h6></p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ <!-- FOOTER -->
+ <div id="wft">
+  <div class="container" id="ft">
+    <div class="row" id="we">
+      <div>
+        <i class="fa fa-car"style="font-size:100px;color:black;"></i>
+        <h5>福州市仓山区</h5>
+      </div><!-- /.col-lg-4 -->
+      <div>
+        <i class="fa fa-podcast"style="font-size:100px;color:black;"></i>
+        <h5>123@o.com</h5>
+      </div><!-- /.col-lg-4 -->
+      <div>
+        <i class="fa fa-superpowers"style="font-size:100px;color:black;"></i>
+        <h5>400-800-88</h5>
+      </div><!-- /.col-lg-4 -->
+      <div>
+        
+        <img class="img-circle" src="image/ewm.jpg" alt="Generic placeholder image" width="200" height="200">
+        <h5>扫一扫加入霍格沃兹</h5>
+      </div>
+    </div><!-- /.row -->
+    <hr class="featurette-divider">
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </div>
+</div>
+
+</div>
+
+ 
+
+</body>
+     
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.407712,39.918284),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"",title:"地址",imageOffset: {width:0,height:3},position:{lat:39.915406,lng:116.403975}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+ 
+ 
+</html>
