@@ -29,18 +29,24 @@
 
 <body>
     <style>
+        .inside{
+            display: flex;
+            flex-direction: column;
+            padding-left: 5%;
+        }
         #main {
             display: flex;
             justify-content: center;
-            flex-direction: column;
             min-width: 1200px;
             
         }
         #main2 {
-            padding: 100px;
+            padding-top: 100px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content:space-around;
+            flex-direction: column;
+            justify-content:center;
+            width: 1200px;
+          
             
             
             
@@ -59,8 +65,9 @@
 
         #po {
             display: flex;
-            justify-content: space-around;
+            flex-direction: row;
             padding-bottom: 55px;
+            width: 100%;
         }
         .resname{
             font-size: 20px;
@@ -101,16 +108,16 @@
             <!-- <tr> -->
 
             <div v-for="r in rows" id="po" @click="cctz( r.id )">
-                <div style="width: 400px;height: auto;">
-                    <div><img style="width: 350px;height: 350px;" v-bind:src="r.resimg" /></div>
+                <div>
+                    <img style="width: 300px;height: 300px;" v-bind:src="r.resimg" />
                 </div>
-                <div style="width: 400px;height: auto;">
+                <div class="inside">
                     <!-- <div>ID:{{r.id}}</div> -->
                     <div class="resname">{{r.resname}}</div>
                     <div class="film">
                     <div>上映时间:{{r.resint}}</div>
                     <div><span>观看地址:</span>
-                        <span><a v-bind:href="r.resurl" rel="external nofollow">{{r.resurl}}</a></span></div>
+                        <span>{{r.resurl}}</span></div>
                     <div id="yu">简介:{{r.pageview}}</div>
                     </div>
                 </div>
@@ -119,18 +126,21 @@
             
             
 
-        </div>
-
+        
+            <!-- :page-sizes="[10, 20, 30, 40]"  -->
         <div class="block" id="fenye">
             <span class="demonstration"></span>
+            
             <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange"
-                :current-page="currentPage1" :page-sizes="[10, 20, 30, 40]" :page-size="pageSize"
+                :current-page="currentPage1"
+
+                :page-size="pageSize"
                 layout="total, sizes, prev, pager, next, jumper" :total="total">
             </el-pagination>
         </div>
 
 
-    </div>
+    </div></div>
 
 
 
@@ -169,7 +179,7 @@
         </div>
       </div>
   
-    </div>
+    
 
 </body>
 
@@ -189,7 +199,6 @@
     //       current_change:function(currentPage){
     //       this.currentPage = currentPage;
     //     }
-
 
 
     //   }
@@ -232,6 +241,7 @@
                         window.open(url);
         
             },
+            
 
             handleSizeChange(val) {
                 var num = Math.ceil(parseFloat(this.total) / val);

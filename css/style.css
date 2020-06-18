@@ -60,14 +60,26 @@ margin-left: 10px;
   justify-content: space-around;
 
 }
-.col-lg-6 h6{
+.col-lg-6 h5{
   line-height: 2.2;
 
 }
-.col-lg-6 h4{
+.col-lg-6 h3{
   padding-top: 35px;
+  font-weight: bolder;
+}
+.container h2{
+  font-weight: bolder;
+  line-height: 150px;
+
+}
+.col-lg-3 p{
+  line-height: 1.8;
 }
 
+.col-lg-3 h3{
+  text-align: center;
+}
 
 /* Featurettes
 ------------------------- */
@@ -102,6 +114,15 @@ letter-spacing: -1px;
   padding-right: 0;
   padding-left: 0;
 }
+}
+.nav-link{
+  font-size: 22px;
+  color: black;
+  font-weight: bolder;
+}
+.nav-link:hover{
+  color:gray;
+}
 
 /* The navbar becomes detached from the top, so we round the corners */
 .navbar-wrapper .navbar {
@@ -124,7 +145,7 @@ letter-spacing: -1px;
 .featurette-heading {
   font-size: 50px;
 }
-}
+
 
 @media (min-width:1200px) {
 .featurette-heading {
@@ -136,7 +157,7 @@ min-width: 1200px;
 }
 
 .head{
-background-color: #f8f9fa;
+background-color:  whitesmoke;
 top: 0;
 z-index: 999;
 height: 95px;
@@ -144,14 +165,14 @@ width: 100%;
 }
 
 .bg-light {
-background-color:#f8f9fa;
+background-color: whitesmoke;
 }
 .middle{
 display: flex;
 justify-content: center;
 position: fixed;
 
-background-color: #f8f9fa;
+background-color: whitesmoke;
 top: 0;
 z-index: 999;
 height: 95px;
@@ -165,7 +186,7 @@ width: 100%;
   z-index: 999;
   width:1200px;
   height: 90px;
-  background-color: #f8f9fa;
+  background-color: whitesmoke;
 
 }
 
