@@ -1,218 +1,628 @@
+@media (max-width:576px) {
+  .container {
+  max-width:576px;
+  padding:0 16px;
+  margin:0 auto;
+  }
+#gang li{
+    width: 10px;
+  }
+  #service img{
+    width:130px;
+    height: auto;
+  }
+  #service p{
+    font-size: 12px;
+  }
+  #service span{
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+  #team span{
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+  #team img{
+    width:100%;
+    height: auto;
 
+  }
+  #team .row .role{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: bolder;
+  }
+  #team .row p{
+    font-size: 10px;
+  }
+  #fresh img{
+    width: 150px;
+    height: auto;
+  }
+  #fresh .row p{
+    font-size: 8px;
+    color: dimgray;
+  }
+  #fresh span{
+    font-size: 15px;
+    line-height: 60px;
+    font-weight: bold;
+  }
+  #foot .row p{
+    font-size: 10px;
+  }
+  #foot .row i{
+    font-size: 30px;
+    color: black;
+  }
+  #foot p{
+    font-size: 10px;
+    color: black;
+  }
+  #foot .row img{
+    width: 50px;
+  }
+  #mian2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #mian2 .row img{
+    width: 140px;
+    height: 210px;
+    overflow: hidden;
+  }
+  #mian2 .resname{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: dimgray;
+    line-height: 30px;
+  }
+  #mian2 .resint{
+    text-align: center;
+    color: seagreen;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #mian2 .pageview{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #mian2 .po{
+    padding-bottom: 20px;
+  }
+  #ndetail .resname{
+    font-size: 22px;
+    font-weight: bolder;
+    color: dimgray;
+    line-height: 100px;
+  }
+  #ndetail .resint{
+    font-size: 14px;
+    color: seagreen;
+    line-height: 30px;
+  }
+  #ndetail .detail{
+    font-size: 14px;
+    line-height: 23px;
+  }
+  #ndetail img{
+    width: 300px;
+    height: auto;
+  }
+  #tu{
+    padding-bottom:50px;
+    padding-top: 50px;
+  }
+  #allmap{
+    width: 150px;
+    height:150px;
+  }
+  #text{
+    font-size: 12px;
+    line-height: 1.5;
+  }
+ }
 
-body{
-  padding-top: 0px;
-  width: 100%;
-}
-
-.aa p{
-  text-align: center;
-}
-.container{
-  padding-top: 30px;
-  align-items: center;
-  min-width: 1200px;
-}
-
-/* center {
-display: block;
-text-align: -webkit-center;
-min-width: 1200px;
-} */
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.container .col-lg-3 {
-margin-bottom: 20px;
-vertical-align: middle;
-padding-left: 15px;
-padding-right: 15px;
-}
-.container h2 {
-font-weight: normal;
-}
-.container .col-lg-3 p {
-margin-right: 10px;
-margin-left: 10px;
-}
-#ha{
+@media (min-width:576px) {
+  .container {
+  max-width:576px;
+  padding:0 16px;
+  margin:0 auto;
+  }
+  #service img{
+    width: 200px;
+    height: auto;
+  }
+  #service span{
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bolder;
+  }
+  #team span{
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bolder;
+  }
+  #team img{
+    width: 450px;
+    height: auto;
+  }
+  #team .row .role{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #fresh img{
+    width: 250px;
+    height: auto;
+  }
+  #fresh .row p{
+    font-size: 14px;
+    color: dimgray;
+  }
+  #fresh span{
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bolder;
+  }
+  #foot .row p{
+    font-size: 20px;
+  }
+  #foot .row i{
+    font-size: 100px;
+    color: black;
+  }
+  #foot .row img{
+    width: 150px;
+  }
+  #mian2{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  #mian2 .row img{
+    width: 160px;
+    height: 230px;
+    overflow: hidden;
+  }
+  #mian2 .resname{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: dimgray;
+    line-height: 35px;
+  }
+  #mian2 .resint{
+    text-align: center;
+    color: seagreen;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  #mian2 .pageview{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #mian2 .po{
+    padding-bottom: 20px;
+  }
+  #ndetail .resname{
+    font-size: 22px;
+    font-weight: bolder;
+    color: dimgray;
+    line-height: 100px;
+  }
+  #ndetail .resint{
+    font-size: 16px;
+    color: seagreen;
+    line-height: 40px;
+  }
+  #ndetail img{
+    width: 450px;
+    height: auto;
+  }
+  #tu{
+    padding-bottom:80px;
+    padding-top: 80px;
+  }
+  #allmap{
+    width: 200px;
+    height:200px;
+  }
+  #text{
+    font-size: 14px;
+    line-height: 2.0;
+  }
   
-  justify-content: center;
-  align-items: center;
-  padding-top: 25px;
-}
+
+ }
+
+
+@media (min-width:768px) {
+  .container {
+  max-width:768px;
+  padding:0 16px;
+  margin:0 auto;
+  }
+  #service img{
+    width: 200px;
+    height: auto;
+  }
+  #service span{
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bolder;
+  }
+  #team img{
+    width: 350px;
+    height: auto;
+  }
+  #team span{
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bolder;
+  }
+  #team .row .role{
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 50px;
+  }
+  #fresh img{
+    width: 350px;
+    height: auto;
+  }
+  #fresh .row p{
+    font-size: 16px;
+    color: dimgray;
+  }
+  #fresh span{
+    font-size: 20px;
+    line-height: 100px;
+    font-weight: bolder;
+  }
+  #foot .row p{
+    font-size: 14px;
+  }
+  #foot .row i{
+    font-size: 70px;
+    color: black;
+  }
+  #foot .row img{
+    width: 100px;
+  }
+  #mian2{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  #mian2 .row img{
+    width: 160px;
+    height: 230px;
+    overflow: hidden;
+  }
+  #mian2 .resname{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: dimgray;
+    line-height: 35px;
+  }
+  #mian2 .resint{
+    text-align: center;
+    color: seagreen;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  #mian2 .pageview{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #mian2 .po{
+    padding-bottom: 20px;
+  }
+  #ndetail .resname{
+    font-size: 22px;
+    font-weight: bolder;
+    color: dimgray;
+    line-height: 100px;
+  }
+  #ndetail .resint{
+    font-size: 16px;
+    color: seagreen;
+    line-height: 40px;
+  }
+  #ndetail img{
+    width: 450px;
+    height: auto;
+  }
+  #tu{
+    padding-bottom:80px;
+    padding-top: 80px;
+  }
+  #allmap{
+    width: 300px;
+    height:300px;
+  }
+  #text{
+    line-height: 2.2;
+  }
+ }
+
+
+ @media (min-width:992px) {
+  .container {
+  width:992px;
+  padding:0 16px;
+  margin:0 auto;
   
+  }
+  #service img{
+    width: 200px;
+    height: auto;
+  }
+  #service span{
+    font-size: 22px;
+    line-height: 120px;
+    font-weight: bolder;
+  }
+  #service p{
+    font-size: 18px;
+    line-height: 40px;
+    overflow:hidden; 
 
-.img-circle{
-  padding-bottom: 20px;
+  }
+  #team img{
+    width: 450px;
+    height: auto;
+  }
+  #team span{
+    font-size: 22px;
+    line-height: 120px;
+    font-weight: bolder;
+  }
+  #team .row .role{
+    font-size: 20px;
+    line-height: 50px;
+  }
+  #fresh img{
+    width: 220px;
+    height: auto;
+  }
+  #fresh .row p{
+    font-size: 16px;
+    color: dimgray;
+  }
+  #fresh span{
+    font-size: 22px;
+    line-height: 120px;
+    font-weight: bolder;
+  }
+  #foot .row p{
+    font-size: 20px;
+  }
+  #foot .row i{
+    font-size: 100px;
+    color: black;
+  }
+  #foot .row img{
+    width: 150px;
+  }
+  #mian2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #mian2 .row img{
+    width: 220px;
+    height: 320px;
+    overflow: hidden;
+  }
+  #mian2 .resname{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: dimgray;
+    line-height: 40px;
+  }
+  #mian2 .resint{
+    text-align: center;
+    color: seagreen;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  #mian2 .pageview{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  #mian2 .po{
+    padding-bottom: 20px;
+  }
+  #ndetail .resname{
+    font-size: 22px;
+    font-weight: bolder;
+    color: dimgray;
+    line-height: 100px;
+  }
+  #ndetail .resint{
+    font-size: 16px;
+    color: seagreen;
+    line-height: 40px;
+  }
+  #ndetail img{
+    width: 500px;
+    height: auto;
+  }
+  #tu{
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  #allmap{
+    width: 400px;
+    height:400px;
+  }
+  #text{
+    line-height: 2.2;
+  }
+ }
+
+
+ @media (min-width:1200px) {
+  .container {
+  width: 1200px;
+  padding:0 16px;
+  margin:0 auto; 
+  }
+  #service img{
+    width: 250px;
+    height: auto;
+  }
+  #service span{
+    font-size: 22px;
+    line-height: 120px;
+  }
+  #team img{
+    width: 550px;
+    height: auto;
+  }
+  #team span{
+    font-size: 22px;
+    line-height: 120px;
+  }
+  #team .row .role{
+    font-size: 20px;
+    line-height: 50px;
+  }
+  #fresh img{
+    width: 250px;
+    height: auto;
+  }
+  #fresh .row p{
+    font-size: 16px;
+    color: dimgray;
+    
+  }
+  #fresh span{
+    font-size: 22px;
+    line-height: 120px;
+  }
+  #foot .row p{
+    font-size: 20px;
+  }
+  #foot .row i{
+    font-size: 100px;
+    color: black;
+  }
+  #foot .row img{
+    width: 150px;
+  }
+  #mian2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #mian2 .row img{
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+  }
+  #mian2 .resname{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: dimgray;
+    line-height: 40px;
+  }
+  #mian2 .resint{
+    text-align: center;
+    color: seagreen;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  #mian2 .pageview{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  #mian2 .po{
+    padding-bottom: 20px;
+  }
+  #ndetail .resname{
+    font-size: 22px;
+    font-weight: bolder;
+    color: dimgray;
+    line-height: 100px;
+  }
+  #ndetail .resint{
+    font-size: 16px;
+    color: seagreen;
+    line-height: 40px;
+  }
+  #ndetail img{
+    width: 500px;
+    height: auto;
+  }
+  #tu{
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  #allmap{
+    width: 500px;
+    height: 500px;
+  }
+  #text{
+    line-height: 2.2;
+  }
 }
 
 
 
-.row{
-  padding-top: 25px;
-  min-width:1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-}
-.col-lg-6 h5{
-  line-height: 2.2;
-
-}
-.col-lg-6 h3{
-  padding-top: 35px;
-  font-weight: bolder;
-}
-.container h2{
-  font-weight: bolder;
-  line-height: 150px;
-
-}
-.col-lg-3 p{
-  line-height: 1.8;
-}
-
-.col-lg-3 h3{
-  text-align: center;
-}
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-font-weight: 300;
-line-height: 1;
-letter-spacing: -1px;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-
-
-@media (min-width: 1200px) {
-/* Navbar positioning foo */
-.navbar-wrapper {
-  margin-top: 20px;
-}
-.navbar-wrapper .container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar {
-  padding-right: 0;
-  padding-left: 0;
-}
-}
-.nav-link{
-  font-size: 22px;
-  color: black;
-  font-weight: bolder;
-}
-.nav-link:hover{
-  color:gray;
-}
-
-/* The navbar becomes detached from the top, so we round the corners */
-.navbar-wrapper .navbar {
-  border-radius: 4px;
-}
-.collaps{
-  display: flex;
-  justify-content: flex-end;
-
-}
-
-/* Bump up size of carousel content */
-
-.carousel-caption p {
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: 1.4;
-}
-
-.featurette-heading {
-  font-size: 50px;
-}
-
-
-@media (min-width:1200px) {
-.featurette-heading {
-  margin-top: 120px;
-}
-}
-#carouselExampleControls{
-min-width: 1200px;
-}
 
 .head{
-background-color:  whitesmoke;
-top: 0;
-z-index: 999;
-height: 95px;
-width: 100%;
+  width: 100%;
+  background-color: #343A40;
 }
-
-.bg-light {
-background-color: whitesmoke;
+.lunbo{
+  width: 100%;
 }
-.middle{
-display: flex;
-justify-content: center;
-position: fixed;
-
-background-color: whitesmoke;
-top: 0;
-z-index: 999;
-height: 95px;
-width: 100%;
-}
-#begin{
+.col-lg-3 .col-md-4 .col-sm-6 .col-6{
   display: flex;
-  justify-content: space-between;
-  /* position: fixed; */
-  top: 0;
-  z-index: 999;
-  width:1200px;
-  height: 90px;
-  background-color: whitesmoke;
+  justify-content: center;
+}
+#foot .row div{
+
+  text-align: center;
+}
+#service{
+  text-align: center;
+}
+#team .row{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.ft{
+  width: 100%;
+  background-color:brown;
+  padding-top: 3%;
+  padding-bottom: 3%;
 
 }
-
-#asd{
-  padding-top: 95px;
-  float: left;
+#pager{
+  display: flex;
+  justify-content: center;
 }
-
-
-
-#ft{
-display: flex;
-justify-content: space-around;
-background-color: brown;
-flex-direction: column;
-min-width: 1200px;
-
-}
-#wft{
+#ndetail #resimg{
 display: flex;
 justify-content: center;
-min-width: 1200px;
-background-color: brown;
 }
-.body {
-display: flex;
-flex-direction: column;
-width: 100%;
+#mian2 .row .resimg{
+  display: flex;
+  justify-content: center;
 }
+
+body img{
+  background: url(./loading.gif) 50% no-repeat;
+}
+
+
+
+
+/* 文本限制
+text-overflow:ellipsis; 
+white-space:nowrap;
+display: block; */
