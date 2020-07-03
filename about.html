@@ -4,8 +4,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
   <link type="text/css" rel="styleSheet" href="css/style.css" />
+
 
   <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=YI5GPIh6iGRGqKGv98WwQDsMY9xG8P0u"></script>
   <title>关于我们</title>
@@ -15,7 +17,50 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/lanrenzhijia.css">
+  <script type="text/javascript" src="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/jquery-1.8.0.min.js"></script>
 </head>
+<style type="text/css">
+  body {
+    margin: 0px;
+  }
+
+  .zhezhao {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  .tankuang {
+    position: relative;
+    background: #fff;
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+    margin: 5% auto;
+  }
+
+  #header {
+    height: 40px;
+  }
+
+  #header-right {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background: red;
+    color: #fff;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+  }
+</style>
+
 
 <body>
 
@@ -65,14 +110,48 @@
   <!-- 地图 -->
   <div class="container" id="tu">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="display: flex;justify-content: center;padding-bottom: 30px;">
         <!--百度地图容器-->
         <div id="allmap"></div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
         <div id="text"> Harry Potter）是英国作家J·K·罗琳（J. K. Rowling）于1997～2007年所著的魔幻文学系列小说，共7部。其中
           前六部以西湖公园（Hogwarts School of Witchcraft and Wizardry）为主要舞台，描写的是主人公——
           年轻的巫师学生哈利·波特在西湖公园前后六年的学习生活和冒险故事</div>
+
+        <!-- Button trigger modal -->
+        <div class="contact" style="display: flex;justify-content: center;">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin-top: 30px;">
+          联系我们
+        </button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Contact With Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>E-mail</p>
+          <textarea name="" id="" rows="1" style="width: 80%;"></textarea>
+          <p>Advice</p>
+          <textarea name="" id=""  style="width: 80%;" rows="10"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+        </div>
       </div>
     </div>
   </div>
@@ -80,8 +159,15 @@
 
 
 
-
-
+  <script type="text/javascript">
+    document.getElementById('zhezhao').style.display = "none";
+    function dianwo() {
+      document.getElementById('zhezhao').style.display = "";
+    }
+    function hidder() {
+      document.getElementById('zhezhao').style.display = "none";
+    }
+  </script>
 
 
 
@@ -136,7 +222,6 @@
   }));
   map.enableScrollWheelZoom(true);  
 </script>
-
 
 
 </html>

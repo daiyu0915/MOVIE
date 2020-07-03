@@ -232,8 +232,9 @@
     //     })
 
 
+
     function getData(page) {
-        axios.get('http://mock-api.com/NnQ6NdKY.mock/news?page=' + page)
+        axios.get('http://mock-api.com/NnQ6NdKY.mock/news?page=' + page)     
             .then(function (res) {
                 var a = res.data;
                 console.log(a);
@@ -246,17 +247,20 @@
                         window.location.href = "newsdetail.html?" + "id=" + ele.id;
                     })
                 })
-            }).catch(function (res) {
+            }
+            ).catch(function (res) {
                 console.log('error', res);
-            })
+            }
+            )
+            
     }
     getData(1);
     $('#tt li a').click(function () {
         $('#main2').html('');
         getData($(this).html());
-
-
-    });
+    }
+    
+    );
 
 
 
